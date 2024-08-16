@@ -32,7 +32,7 @@ a {
     text-decoration: none;
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
 .container {
     max-width: 120rem;
@@ -53,4 +53,29 @@ h2 {
 }
 h3 {
     font-size: 2.4rem;
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header__logo {
+    margin: 3rem 0;
+}
+/* Navigation */
+.navigation {
+    background-color: var(--primaryDark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navigation__link {
+    font-family: var(--mainFont);
+    color: var(--white);
+    font-size: 3rem;
+}
+.navigation__link:hover,
+.navigation__link--active {
+    color: var(--secondary);
 }
